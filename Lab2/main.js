@@ -83,18 +83,18 @@
 // }
 
 // Bai3
-const firstPromise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('foo');
-    },2000);
-});
-const secondPromise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        reject('some bug');
-    },2000);
-});
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('foo');
+//     },2000);
+// });
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         reject('some bug');
+//     },2000);
+// });
 
-const getList = async () => await fetch('https://65a4caf752f07a8b4a3db177.mockapi.io/api/lab2/1');
+// const getList = async () => await fetch('https://65a4caf752f07a8b4a3db177.mockapi.io/api/lab2/1');
 // use Promise all
 // Promise.all([firstPromise, secondPromise, getList()])
 //     .then(results => {
@@ -108,16 +108,13 @@ const getList = async () => await fetch('https://65a4caf752f07a8b4a3db177.mockap
 
 
 // use Promise.allSettled
-Promise.allSettled([firstPromise, secondPromise, getList()])
-    .then(results => {
-        console.log('All promises completed.');
-        console.log(results);
-    })
-    .catch(error => {
-        console.log('Error:', error);
-    })
-    .finally(() => {
-        console.log('Promise set has been finished.');
-    });
+// Promise.allSettled([firstPromise, secondPromise, getList()])
+//     .then(results => {
+//         console.log('All promises completed.');
+//         console.log(results);
+//     })
+//     .finally(() => {
+//         console.log('Promise set has been finished.');
+//     });
 
 

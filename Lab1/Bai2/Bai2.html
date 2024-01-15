@@ -21,7 +21,7 @@
             console.log(fillteredPlayers);
 
             const playerWithMaxGoals = fillteredPlayers.reduce((maxplayer,player) => {
-                return player?.goals > maxplayer?.goals ? player : maxplayer;
+                return player.goals > maxplayer.goals ? player : maxplayer;
             });
             console.log(playerWithMaxGoals)
 
