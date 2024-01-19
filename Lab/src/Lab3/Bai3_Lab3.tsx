@@ -4,8 +4,10 @@ import Modal from 'react-native-modal';
 import { Image } from 'react-native';
 import COLORS from '../../assets/Colors';
 import IMAGES from '../../assets/Images';
+import { useNavigation } from '@react-navigation/native';
 
 const Bai3 = () => {
+  const navigation = useNavigation() as any
   const [isModalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -20,11 +22,22 @@ const Bai3 = () => {
     );
     return true; // Chặn sự kiện back mặc định
   };
-
+  const Lab4Bai1_2Click=()=>{
+    navigation.navigate('Lab4Bai1_2')
+  }
+  const Lab4Bai3 =()=>{
+    navigation.navigate('Lab4Bai3')
+  }
   return (
     <View style={styles.container}>
       <TouchableOpacity style = {{...styles.button, backgroundColor: COLORS.GREEN_CYAN}} onPress={toggleModal} >
         <Text style = {styles.text}>Mở Modal</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style = {{...styles.button, backgroundColor: COLORS.GREEN_CYAN, marginTop:30}} onPress={Lab4Bai1_2Click} >
+        <Text style = {styles.text}>Lab 4 bài 1_2</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style = {{...styles.button, backgroundColor: COLORS.GREEN_CYAN, marginTop:30}} onPress={Lab4Bai3} >
+        <Text style = {styles.text}>Lab 4 bài 3</Text>
       </TouchableOpacity>
 
       <Modal

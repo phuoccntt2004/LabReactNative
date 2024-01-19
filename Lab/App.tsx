@@ -1,10 +1,12 @@
 import React from 'react';
-import Home_Lab3 from './src/Lab3/Home_Lab3';
+import StackNavigator from './src/navigations';
 import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
   return (
-    <Home_Lab3/>
+    <NavigationContainer>
+      <StackNavigator/>
+    </NavigationContainer>
   );
 }
 
