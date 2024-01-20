@@ -22,7 +22,6 @@ const Lab4Bai3 = () => {
         textName='Sign in with Google'/>
       <TextButton TextValues='Don’t have account? Click' TextClick='Register' />
       <TextButton TextValues='Forget Password? Click' TextClick='Reset'/>
-
     </View>
   )
 }
