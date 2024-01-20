@@ -1,6 +1,6 @@
 import { ImageSourcePropType } from "react-native"
 
-export interface contactType{
+export interface ContactType{
     dulieu:{
         name:string,
         position:string,

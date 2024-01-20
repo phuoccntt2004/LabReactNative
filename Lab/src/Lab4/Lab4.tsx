@@ -3,7 +3,6 @@ import React, {  useState } from 'react'
 import { FlatList, GestureHandlerRootView, RefreshControl, ScrollView } from 'react-native-gesture-handler'
 import IMAGES from '../../assets/Images'
 import FlatListStyle from '../components/FlatList/FlatListStyle'
-import COLORS from '../../assets/Colors'
 
 
 const Lab4 = () => {

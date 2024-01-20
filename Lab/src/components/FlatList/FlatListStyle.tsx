@@ -1,10 +1,10 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-import { contactType } from '../../models/ContactType'
 import COLORS from '../../../assets/Colors'
+import { ContactType } from '../../models/ContactType'
 
-const FlatListStyle:React.FC<contactType> = (props) => {
+const FlatListStyle:React.FC<ContactType> = (props) => {
     const {dulieu}=props
   return (
     <View style={{padding:15,backgroundColor:COLORS.GRAY}}>
