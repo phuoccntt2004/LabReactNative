@@ -1,5 +1,5 @@
-import { View, Text, ImageSourcePropType, StatusBar, StatusBarStyle } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import { ImageSourcePropType, StatusBar, StatusBarStyle } from 'react-native'
+import React, {  useState } from 'react'
 import { FlatList, GestureHandlerRootView, RefreshControl, ScrollView } from 'react-native-gesture-handler'
 import IMAGES from '../../assets/Images'
 import FlatListStyle from '../components/FlatList/FlatListStyle'
