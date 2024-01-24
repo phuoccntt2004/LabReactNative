@@ -5,7 +5,10 @@ const IMAGES = {
     FbIcon : require('./icon_fb.png'),
     GgIcon: require('./icon_gg.png'),
     LogoLogin : require('../Images/SplashScreenImage.png'),
-    ICONGG:require('../Images/iconGoogle.png')
+    ICONGG:require('../Images/iconGoogle.png'),
+    Star: require('./star.png'),
+    HomePage : require('./home.png'),
+
 }
 
 export default IMAGES;
