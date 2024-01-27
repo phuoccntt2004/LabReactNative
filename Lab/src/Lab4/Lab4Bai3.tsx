@@ -6,7 +6,12 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 import CheckBox from '@react-native-community/checkbox'
 import { TextInput as PaperTextInput } from 'react-native-paper';
 import KeyboardAvoidingViewWrapper from '../components/KeyboardAvoidingWrapper'
+import { useNavigation } from '@react-navigation/native'
 const Lab4Bai3 = () => {
+    const navigation = useNavigation() as any
+    const ClickLab5 = ()=>{
+        navigation.navigate('Lab5')
+    }
   return (
     <KeyboardAvoidingViewWrapper>
       <View style={styles.container}>
@@ -47,8 +52,8 @@ const Lab4Bai3 = () => {
                   <Text style={{ color: COLORS.ORANGE, fontSize: 16 }}>Quên mật khẩu?</Text>
               </View>
               <View style={{ alignItems: 'center', marginTop: 20 }}>
-                  <Pressable style={styles.buttonLogin} >
-                      <Text style={styles.textButton}>ĐĂNG NHẬP</Text>
+                  <Pressable style={styles.buttonLogin} onPress={ClickLab5} >
+                      <Text style={styles.textButton}>Lab 5</Text>
                   </Pressable>
               </View>
               <View style={styles.view}>
@@ -72,7 +77,7 @@ const Lab4Bai3 = () => {
               </View>
               <View style={[styles.viewRemember, { marginTop: 20, justifyContent: 'center' }]}>
                   <Text style={{ fontSize: 16, color: COLORS.BLUE }}>Bạn chưa có tài khoản?</Text>
-                  <TouchableOpacity>
+                  <TouchableOpacity >
                       <Text style={{ color: COLORS.ORANGE, fontSize: 16 }}>  Đăng ký</Text>
                   </TouchableOpacity>
               </View>
