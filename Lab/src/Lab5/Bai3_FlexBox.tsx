@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import COLORS from '../../assets/Colors';
 import IMAGES from '../../assets/Images';
 import { PlayfairDisplay } from '../../assets/fonts';
+import Icon  from 'react-native-vector-icons/Ionicons';
 
 const Bai3_FlexBox = () => {
   return (
