@@ -4,8 +4,13 @@ import COLORS from '../../assets/Colors';
 import IMAGES from '../../assets/Images';
 import { PlayfairDisplay } from '../../assets/fonts';
 import Icon  from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
 
 const Bai3_FlexBox = () => {
+  const navigation = useNavigation() as any
+  const ClickLab6 = ()=>{
+    navigation.navigate('Lab6')
+  }
   return (
     <View style={styles.container}>
       <StatusBar translucent backgroundColor="transparent" />
@@ -26,8 +31,8 @@ const Bai3_FlexBox = () => {
       </View>
       <View style={styles.footer}>
         <Text style={styles.price}>$100/ngày</Text>
-        <TouchableOpacity style={styles.bookButton}>
-          <Text style={styles.buttonText}>Book Now</Text>
+        <TouchableOpacity style={styles.bookButton} onPress={ClickLab6}>
+          <Text style={styles.buttonText}>Lab6</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.heartIconContainer}>

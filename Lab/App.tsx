@@ -1,12 +1,14 @@
 import React from 'react';
 import StackNavigator from './src/navigations';
 import { NavigationContainer } from '@react-navigation/native';
+import Home_Bai1_Lab6 from './src/Lab6/Home_Bai1_Lab6';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <StackNavigator/>
-    </NavigationContainer>
+    // <NavigationContainer>
+      
+    // </NavigationContainer>
+    <Home_Bai1_Lab6/>
   );
 }
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
 import { Image } from 'react-native';
 import Bai1_2_Lab3 from '../Lab3/Bai1_2_Lab3';
 import Bai3_Lab3 from '../Lab3/Bai3_Lab3';
@@ -9,6 +8,7 @@ import Lab4 from '../Lab4/Lab4';
 import { createStackNavigator } from '@react-navigation/stack';
 import Lab4Bai3 from '../Lab4/Lab4Bai3';
 import Home_Lab5 from '../Lab5/Home_Lab5';
+import AppNavigator from '../Lab6/Home_Bai1_Lab6';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator()
@@ -21,7 +21,8 @@ const StackNavigator = () => {
       <Stack.Screen name='Lab4Bai1_2' component={Lab4}/>
       <Stack.Screen name='Lab4Bai3' component={Lab4Bai3}/>
       <Stack.Screen name='Lab5' component={Home_Lab5}/>
-
+      <Stack.Screen name='Lab6' component={AppNavigator}/>
+      
     </Stack.Navigator>
   );
 }

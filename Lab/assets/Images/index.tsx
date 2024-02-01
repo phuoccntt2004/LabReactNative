@@ -8,6 +8,7 @@ const IMAGES = {
     ICONGG:require('../Images/iconGoogle.png'),
     Star: require('./star.png'),
     HomePage : require('./home.png'),
+    Avatar1 : require('./avata_1.png'),
 
 }
 
