@@ -1,0 +1,29 @@
+{
+  "user": [
+    {
+      "username": "duyduc",
+      "date": "14-03-2001",
+      "id": "1"
+    },
+    {
+      "username": "huunghia",
+      "date": "18-10-2001",
+      "id": "2"
+    },
+    {
+      "username": "tienphuoc",
+      "date": "20-10-2001",
+      "id": "3"
+    },
+    {
+      "username": "trungkien",
+      "date": "18-10-2001",
+      "id": "4"
+    },
+    {
+      "id": "2e10",
+      "username": "xuanthao",
+      "date": "22-2-2004"
+    }
+  ]
+}
