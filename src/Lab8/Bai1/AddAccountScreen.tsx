@@ -29,22 +29,22 @@ const AddAccountScreen: React.FC = ({ navigation }: any) => {
 
     return (
         <View style = {styles.container}>
-            <Text style={{ color: COLORS.HEX_ORANGE, fontSize: 35, fontWeight: '500', marginBottom: 30, textAlign: 'center' }}>Thêm Tài Khoản</Text>
+            <Text style={{ color: '#FFCC00', fontSize: 35, fontWeight: '500', marginBottom: 30, textAlign: 'center' }}>Thêm Tài Khoản</Text>
             <PaperTextInput
                 label="Tên người dùng"
                 style={styles.textInput}
-                theme={{ colors: { primary: COLORS.HEX_ORANGE } }}
+                theme={{ colors: { primary: '#FFCC00' } }}
                 value={newUsername}
                 onChangeText={setNewUsername}
             />
             <PaperTextInput
                 label="Ngày Sinh"
                 style={styles.textInput}
-                theme={{ colors: { primary: COLORS.HEX_ORANGE } }}
+                theme={{ colors: { primary: '#FFCC00' } }}
                 value={newDate}
                 onChangeText={setNewDate}
             />
-            <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor:'#FFFF99', marginTop: 20 }} onPress={onCreateAccount} >
+            <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor:'#FFCC00', marginTop: 20 }} onPress={onCreateAccount} >
                 <Text style={styles.text}>Tạo Tài Khoản</Text>
             </TouchableOpacity>
         </View>
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         backgroundColor: COLORS.WHITE,
         borderWidth: 2,  // Độ rộng của đường viền
-        borderColor: COLORS.HEX_ORANGE,
+        borderColor: '#FFCC00',
     },
 });
 

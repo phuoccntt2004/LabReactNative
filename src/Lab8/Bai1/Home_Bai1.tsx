@@ -103,7 +103,7 @@ const YourComponent: React.FC = ({ navigation }: any) => {
         <Text style={styles.date}>{item.date}</Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: '#0099FF' }} onPress={() => onEditUser(item.id)} >
+        <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: '#FFFF99' }} onPress={() => onEditUser(item.id)} >
           <Text style={styles.text}>Sửa Thông Tin</Text>
         </TouchableOpacity>
         <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: '#FF0000' }} onPress={() => onDeleteUser(item.id)} >
@@ -115,7 +115,7 @@ const YourComponent: React.FC = ({ navigation }: any) => {
 
   return (
     <View>
-      <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: '#00CC00', marginBottom: 10, marginTop: 10 }} onPress={onCreateAccount}>
+      <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: '#FFCC00', marginBottom: 10, marginTop: 10 }} onPress={onCreateAccount}>
         <Text style={styles.text}>Tạo Tài Khoản</Text>
       </TouchableOpacity>
       <FlatList
@@ -129,21 +129,21 @@ const YourComponent: React.FC = ({ navigation }: any) => {
           <PaperTextInput
             label="Tên người dùng"
             style={styles.textInput}
-            theme={{ colors: { primary: COLORS.HEX_ORANGE } }}
+            theme={{ colors: { primary: '#FFCC00' } }}
             value={editedUsername}
             onChangeText={setEditedUsername}
           />
           <PaperTextInput
             label="Ngày Sinh"
             style={styles.textInput}
-            theme={{ colors: { primary: COLORS.HEX_ORANGE } }}
+            theme={{ colors: { primary: '#FFCC00' } }}
             value={editedDate}
             onChangeText={setEditedDate}
           />
-          <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: COLORS.HEX_ORANGE, marginTop: 20 }} onPress={onUpdateUser} >
+          <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: '#FFCC00', marginTop: 20 }} onPress={onUpdateUser} >
             <Text style={styles.text}>Cập Nhật</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: COLORS.GRAY, marginTop: 20 }} onPress={() => setEditModalVisible(false)} >
+          <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: "#ccc", marginTop: 20 }} onPress={() => setEditModalVisible(false)} >
             <Text style={styles.text}>Đóng</Text>
           </TouchableOpacity>
         </View>
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     borderBottomColor: 'rgba(204, 204, 204, 0.5)',
     borderRadius: 10,
     marginBottom: 10,
-    backgroundColor: 'white',
+    backgroundColor: '#FFCC00',
   },
   userInfo: {
     flexDirection: 'row',
@@ -194,10 +194,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     backgroundColor: COLORS.WHITE,
     borderWidth: 2,  // Độ rộng của đường viền
-    borderColor: COLORS.HEX_ORANGE,
+    borderColor: '#FFCC00',
   },
   text: {
-    color: COLORS.WHITE,
+    color: COLORS.BLACK,
     fontWeight: 'bold',
     fontSize: 20,
     textAlign: 'center'
