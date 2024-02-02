@@ -22,7 +22,7 @@ const YourComponent: React.FC = ({ navigation }: any) => {
 
   const onGetUserList = async () => {
     try {
-      const response = await axios.get('http://192.168.1.209:3000/user');
+      const response = await axios.get('http://172.16.49.174:3000/user');
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching user list:', error);
@@ -31,7 +31,7 @@ const YourComponent: React.FC = ({ navigation }: any) => {
 
   const onDeleteUser = async (userId: number) => {
     try {
-      await axios.delete(`http://192.168.1.209:3000/user/${userId}`);
+      await axios.delete(`http://172.16.49.174:3000/user/${userId}`);
       onGetUserList();
     } catch (error) {
       console.error('Error deleting user:', error);
@@ -55,7 +55,7 @@ const YourComponent: React.FC = ({ navigation }: any) => {
         console.error('No user to update');
         return;
       }
-      const response = await axios.put(`http://192.168.1.209:3000/user/${selectedUserId}`, {
+      const response = await axios.put(`http://172.16.49.174:3000/user/${selectedUserId}`, {
         username: editedUsername,
         date: editedDate || selectedUser.date,
       });

@@ -22,16 +22,16 @@ const HomeScreen: React.FC<HomeScreen> = (props) => {
       <PaperTextInput
         label="Nhập Tên người dùng"
         style={styles.textInput}
-        theme={{ colors: { primary: COLORS.HEX_ORANGE } }}
-        left={<PaperTextInput.Icon icon="account" color={COLORS.HEX_ORANGE} />}
+        theme={{ colors: { primary: COLORS.GREEN } }}
+        left={<PaperTextInput.Icon icon="account" color={COLORS.GREEN} />}
         value={name}
         onChangeText={(text) => setName(text)}
       />
       <PaperTextInput
         label="Nhập Id người dùng"
         style={styles.textInput}
-        theme={{ colors: { primary: COLORS.HEX_ORANGE } }}
-        left={<PaperTextInput.Icon icon="account" color={COLORS.HEX_ORANGE} />}
+        theme={{ colors: { primary: COLORS.GREEN } }}
+        left={<PaperTextInput.Icon icon="account" color={COLORS.GREEN} />}
         value={id}
         onChangeText={(number) => setId(number)}
       />
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     backgroundColor: COLORS.WHITE,
     borderWidth: 2,  // Độ rộng của đường viền
-    borderColor: COLORS.HEX_ORANGE,
+    borderColor: COLORS.GREEN,
 }
 })
 

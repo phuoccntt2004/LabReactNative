@@ -18,8 +18,8 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
                                 size={50}
                             />
                             <View style={{ flexDirection: 'column', marginLeft: 15 }}>
-                                <Title style={styles.title}>DMon's Duy Đức</Title>
-                                <Caption style={styles.caption}>zyduwc@14321</Caption>
+                                <Title style={styles.title}>Nguyễn Tiến Phước</Title>
+                                <Caption style={styles.caption}>phuoccntt2004@gmail.com</Caption>
                             </View>
                         </View>
                     </View>
@@ -35,7 +35,7 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
                                 props.navigation.navigate('Home');
                             }}
                             activeBackgroundColor="yellow" // Màu nền khi mục đang hoạt động
-                            inactiveBackgroundColor="#00BFFF"  />
+                            inactiveBackgroundColor="#ffffcc"  />
                         <DrawerItem
                             icon={({ color, size }) => {
                                 return <Icon name="receipt-sharp"
@@ -47,7 +47,7 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
                                 props.navigation.navigate('Article');
                             }}
                             activeBackgroundColor="yellow" // Màu nền khi mục đang hoạt động
-                            inactiveBackgroundColor="#00BFFF"   />
+                            inactiveBackgroundColor="#ffffcc"   />
                         <DrawerItem
                             icon={({ color, size }) => {
                                 return <Icon name="chatbubbles-sharp"
@@ -59,7 +59,7 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
                                 props.navigation.navigate('Chat');
                             }} 
                             activeBackgroundColor="yellow" // Màu nền khi mục đang hoạt động
-                            inactiveBackgroundColor="#00BFFF"  
+                            inactiveBackgroundColor="#ffffcc"  
                             />
                         <DrawerItem
                             icon={({ color, size }) => {
@@ -72,7 +72,7 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
                                 props.navigation.navigate('Setting');
                             }} 
                             activeBackgroundColor="yellow" // Màu nền khi mục đang hoạt động
-                            inactiveBackgroundColor="#00BFFF" 
+                            inactiveBackgroundColor="#ffffcc" 
                             />            
                     </Drawer.Section>
                 </View>
@@ -88,7 +88,7 @@ const DrawerContent: React.FC<DrawerContentComponentProps> = (props) => {
 
                     }} 
                     activeBackgroundColor="yellow" // Màu nền khi mục đang hoạt động
-                    inactiveBackgroundColor="#00BFFF" />
+                    inactiveBackgroundColor="#ffffcc" />
             </Drawer.Section>
         </View>
     );

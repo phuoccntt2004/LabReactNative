@@ -10,7 +10,7 @@ const AddAccountScreen: React.FC = ({ navigation }: any) => {
 
     const onCreateAccount = async () => {
         try {
-            const response = await axios.post('http://192.168.1.209:3000/user', {
+            const response = await axios.post('http://172.16.49.174:3000/user', {
                 username: newUsername,
                 date: newDate,
             });
@@ -44,7 +44,7 @@ const AddAccountScreen: React.FC = ({ navigation }: any) => {
                 value={newDate}
                 onChangeText={setNewDate}
             />
-            <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor: COLORS.HEX_ORANGE, marginTop: 20 }} onPress={onCreateAccount} >
+            <TouchableOpacity style={{ ...styles.buttonModal, backgroundColor:'#FFFF99', marginTop: 20 }} onPress={onCreateAccount} >
                 <Text style={styles.text}>Tạo Tài Khoản</Text>
             </TouchableOpacity>
         </View>
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     },
     buttonModal: {
         borderRadius: 10,
-        padding: 10
+        padding: 10,
     },
     text: {
         color: COLORS.WHITE,

@@ -22,7 +22,7 @@ const Home_Lab7 = () => {
           tabBarOptions={{
             labelStyle: { fontSize: 12, fontWeight: 'bold',  marginLeft: 15},
             iconStyle: { marginBottom: -25, marginRight: 80 },
-            style: { elevation: 0, shadowOpacity: 0 , backgroundColor: '#33CCFF'},
+            style: { elevation: 0, shadowOpacity: 0 , backgroundColor: '#FFFF99'},
           }}
           screenOptions={({ route }) => ({
             tabBarLabelPosition: 'beside-icon',
@@ -77,7 +77,7 @@ const Home_Lab7 = () => {
                         return (
                             <RowComponent
                                 localStyles={{
-                                    backgroundColor: focused ? '#33CCFF' : '#fff',
+                                    backgroundColor: focused ? '#FFFF99' : '#fff',
                                 }}>
                                 {icon}
                                 {label}
